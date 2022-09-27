@@ -1,0 +1,190 @@
+:root {
+    --cor_pri: #1F7061;
+    --cor_sec: #94F2E4;
+    --cor_ter: #4AF0D7;
+    --cor_qua: #44706A;
+    --cor_qui: #3ABDA9;
+    --font_pri: 'Fjalla One', sans-serif;
+    --font_sec: 'Lobster', cursive;
+    --font_ter: 'Ms Madi', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-family: var(--font_pri);
+    font-weight: lighter;
+}
+
+body {
+    background-color: #1d1e26;
+}
+
+.column {
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.container {
+    background-color: #CCC;
+    width: 990px;
+    display: flex;
+    padding: 20px;
+}
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor_sec);
+}
+
+.envelope {
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    background-color: #FFFFFF;
+}
+
+#logo_tolkien {
+    height: 100%;
+}
+
+header .container h1 {
+    font-family: var(--font_sec);
+    word-spacing: 4px;
+    font-weight: lighter;
+}
+
+.menu {
+    min-width: 280px;
+}
+
+.menu ul {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu a {
+    text-decoration: none;
+    background-color: var(--cor_qui);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    background-color: var(--cor_qua);
+}
+
+.menu li {
+    text-decoration: none;
+    display: block;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+section .container {;
+    align-items: center;
+}
+
+#main {
+    background-color: var(--cor_pri)
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div h1 {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#bibliografia {
+    background-color: var(--cor_ter)
+}
+
+#bibliografia .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    align-content: space-around;
+    background-color: var(--cor_pri);
+    max-width: 95%;
+    min-height: 400px;
+    border-radius: 50px;
+}
+
+#bibliografia h2 {
+    margin: 15px;
+}
+
+.data_obra {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    background-color: #52d3bd;
+    padding: 15px;
+    border-radius: 25%;
+    width: 300px;
+    text-shadow: #1d1e26 1px 2px;
+}
+
+#foto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#foto figcaption {
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+#tolkien {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 20px;
+    background-color: #94F2E4;
+    border-radius: 50%;
+}
+
+#principal {
+    font-size: 20px;
+    margin: 20px;
+    text-align: justify;
+    line-height: 35px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cor_pri);
+}
+
+footer a {
+    text-decoration: none;
+}
